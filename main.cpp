@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <vector>
 
 
@@ -9,13 +9,12 @@ template<typename T>
 void move_vectors(std::vector<T> &vector_one, std::vector<T> &vector_two);
 
 int main() {
-    #if WIN32
+#if WIN32
     setlocale(LC_ALL, "ru");
-    #endif
-
+#endif
     std::cout << "\tПеремещение объектов\n" << std::endl;
 
-    std::vector<std::string> one = {"test_string1", "test_string2"};
+    std::vector<std::string> one{ "test_string1", "test_string2" };
     std::vector<std::string> two;
 
     std::cout << "Векторы до перемещения:" << std::endl;
